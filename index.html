@@ -3,27 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Choix du format</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #fffaf0;
+    }
+    img {
+      width: 50%; /* réduit l’image de moitié */
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+    h1 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 30px;
+      background: linear-gradient(45deg, #d4af37, #ffd700); /* doré */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-  <!-- Image en premier -->
-  <img src="couverture.png" alt="Couverture du livre À fleur de peau, à fleur de mots" class="cover">
-  
-  <!-- Texte introductif -->
-  <h1>À fleur de peau, à fleur de mots</h1>
-  <p>Un thriller sensuel, une expérience poétique et musicale qui se ressent autant qu’elle se lit.</p>
-  
-  <!-- Explications avant les boutons -->
-  <p class="note">
-    🔹 <strong>PDF</strong> : format universel, lisible sur ordinateur, tablette ou smartphone.<br>
-    🔹 <strong>EPUB</strong> : format optimisé pour la lecture numérique. Nous recommandons le lecteur gratuit <strong>Thorium</strong> pour une expérience fluide.<br><br>
-    Après votre paiement, vous recevrez un email avec le lien de téléchargement du format choisi.
-  </p>
-  
-  <a href="paiement/index.html" class="btn">✨ Choisir mon format ✨</a>
-
-
-</div>
-  </body>
+  <img src="couverture.png" alt="Illustration du livre">
+  <h1>Choisissez votre format</h1>
+  <p>Le livre est disponible en PDF ou en EPUB.</p>
+  <a href="https://buy.stripe.com/eVq3cx5LG84v66bbHg67S09" class="btn">📄 PDF — 4,99 €</a>
+  <a href="https://buy.stripe.com/5kQaEZ7TO70reCH4eO67S08" class="btn">📚 EPUB — 4,99 €</a>
+</body>
 </html>
 
