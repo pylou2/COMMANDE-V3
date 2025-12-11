@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À fleur de peau, à fleur de mots</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px;
+      text-align: center;
+    }
+    /* Image en premier et réduite */
+    .cover {
+      margin: 20px 0;
+      max-width: 40%; /* encore plus petite */
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    /* Bouton stylisé */
+    .btn {
+      display: inline-block;
+      padding: 22px 50px; /* plus grand */
+      margin-top: 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.5em; /* texte plus gros */
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff4081, #e91e63); /* dégradé rose vif */
+      color: #fff;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.25); /* ombre plus marquée */
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #e91e63, #c2185b);
+      transform: scale(1.05); /* effet zoom au survol */
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image en premier -->
+    <img src="couverture_livre.png" alt="Couverture du livre À fleur de peau, à fleur de mots" class="cover">
+    
+    <!-- Texte ensuite -->
+    <h1>À fleur de peau, à fleur de mots</h1>
+    
+    <p>Vous avez cliqué ! Merci ! Vous allez frissonner…<br>
+    Entrez dans un livre musical qui ne se lit pas, mais qui se ressent.</p>
+    
+    <p><em>À fleur de peau, à fleur de mots</em> est un <strong>thriller sensuel</strong>.<br>
+    Un bain de lumière et de trouble.<br>
+    Une caresse qui dérange, une expérience qui rappellera peut‑être des souvenirs…</p>
+    
+    <!-- Bouton unique vers Stripe -->
+    <a href="Paiement/index.html" class="btn">✨ Choisir mon format ✨</a>
+ 
+    <p class="note">Après votre achat, vous recevrez un email avec les deux formats (PDF et EPUB).</p>
+  </div>
+</body>
+</html>
