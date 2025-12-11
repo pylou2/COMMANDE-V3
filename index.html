@@ -17,11 +17,15 @@
       padding: 40px;
       text-align: center;
     }
-    img {
+    /* Image en premier et réduite */
+    .cover {
       margin: 20px 0;
-      max-width: 50%; /* réduit de moitié */
+      max-width: 40%; /* encore plus petite */
       height: auto;
       border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     h1 {
       font-size: 2em;
@@ -31,21 +35,23 @@
       font-size: 1.1em;
       line-height: 1.5;
     }
+    /* Bouton stylisé */
     .btn {
       display: inline-block;
-      padding: 18px 40px; /* bouton plus grand */
+      padding: 22px 50px; /* plus grand */
       margin-top: 30px;
-      border-radius: 8px;
+      border-radius: 12px;
       text-decoration: none;
-      font-size: 1.3em; /* texte plus gros */
+      font-size: 1.5em; /* texte plus gros */
       font-weight: bold;
-      background: #e91e63; /* couleur vive */
+      background: linear-gradient(135deg, #ff4081, #e91e63); /* dégradé rose vif */
       color: #fff;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* effet bouton */
-      transition: background 0.3s ease;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.25); /* ombre plus marquée */
+      transition: transform 0.2s ease, background 0.3s ease;
     }
     .btn:hover {
-      background: #c2185b;
+      background: linear-gradient(135deg, #e91e63, #c2185b);
+      transform: scale(1.05); /* effet zoom au survol */
     }
     .note {
       font-size: 0.9em;
@@ -57,7 +63,7 @@
 <body>
   <div class="container">
     <!-- Image en premier -->
-    <img src="couverture.png" alt="Couverture du livre À fleur de peau, à fleur de mots">
+    <img src="couverture.png" alt="Couverture du livre À fleur de peau, à fleur de mots" class="cover">
     
     <!-- Texte ensuite -->
     <h1>À fleur de peau, à fleur de mots</h1>
@@ -76,4 +82,3 @@
   </div>
 </body>
 </html>
-
