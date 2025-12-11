@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Choix du format</title>
+</head>
+<body>
+  <div class="container">
+  <!-- Image en premier -->
+  <img src="couverture.png" alt="Couverture du livre À fleur de peau, à fleur de mots" class="cover">
+  
+  <!-- Texte introductif -->
+  <h1>À fleur de peau, à fleur de mots</h1>
+  <p>Un thriller sensuel, une expérience poétique et musicale qui se ressent autant qu’elle se lit.</p>
+  
+  <!-- Explications avant les boutons -->
+  <p class="note">
+    🔹 <strong>PDF</strong> : format universel, lisible sur ordinateur, tablette ou smartphone.<br>
+    🔹 <strong>EPUB</strong> : format optimisé pour la lecture numérique. Nous recommandons le lecteur gratuit <strong>Thorium</strong> pour une expérience fluide.<br><br>
+    Après votre paiement, vous recevrez un email avec le lien de téléchargement du format choisi.
+  </p>
+  
+  <a href="paiement/index.html" class="btn">✨ Choisir mon format ✨</a>
+
+
+</div>
+  </body>
+</html>
