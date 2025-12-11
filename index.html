@@ -17,6 +17,12 @@
       padding: 40px;
       text-align: center;
     }
+    img {
+      margin: 20px 0;
+      max-width: 50%; /* réduit de moitié */
+      height: auto;
+      border-radius: 8px;
+    }
     h1 {
       font-size: 2em;
       margin-bottom: 10px;
@@ -25,33 +31,21 @@
       font-size: 1.1em;
       line-height: 1.5;
     }
-    img {
-      margin: 20px 0;
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .form {
+    .btn {
+      display: inline-block;
+      padding: 18px 40px; /* bouton plus grand */
       margin-top: 30px;
-    }
-    input {
-      padding: 12px;
-      margin: 8px 0;
-      width: 80%;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      padding: 12px 25px;
-      background: #333;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.3em; /* texte plus gros */
+      font-weight: bold;
+      background: #e91e63; /* couleur vive */
       color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* effet bouton */
+      transition: background 0.3s ease;
     }
-    button:hover {
-      background: #555;
+    .btn:hover {
+      background: #c2185b;
     }
     .note {
       font-size: 0.9em;
@@ -62,30 +56,24 @@
 </head>
 <body>
   <div class="container">
+    <!-- Image en premier -->
+    <img src="couverture.png" alt="Couverture du livre À fleur de peau, à fleur de mots">
+    
+    <!-- Texte ensuite -->
     <h1>À fleur de peau, à fleur de mots</h1>
     
     <p>Vous avez cliqué ! Merci ! Vous allez frissonner…<br>
-    Entrez dans un livre qui ne se lit pas, mais qui se ressent.</p>
+    Entrez dans un livre musical qui ne se lit pas, mais qui se ressent.</p>
     
     <p><em>À fleur de peau, à fleur de mots</em> est un <strong>thriller sensuel</strong>.<br>
     Un bain de lumière et de trouble.<br>
     Une caresse qui dérange, une expérience qui rappellera peut‑être des souvenirs…</p>
     
-    <p>Deux formats vous attendent :</p>
-    <ul style="list-style:none; padding:0;">
-      <li>👉 PDF — pour une lecture classique et posée</li>
-      <li>👉 EPUB — pour une immersion fluide et mobile</li>
-    </ul>
-    
-    <!-- Image de couverture -->
-    <img src="couverture_livre.png" alt="Couverture du livre À fleur de peau, à fleur de mots">
-    
-    <!-- Formulaire -->
-      <a href="LIEN_STRIPE_UNIQUE" class="btn">✨ Acheter le livre ✨</a>
+    <!-- Bouton unique vers Stripe -->
+    <a href="LIEN_STRIPE_UNIQUE" class="btn">✨ Acheter le livre ✨</a>
     
     <p class="note">Après votre achat, vous recevrez un email avec les deux formats (PDF et EPUB).</p>
-    
-    <p class="note">Votre email ne sera utilisé que pour vous envoyer le livre.</p>
   </div>
 </body>
 </html>
+
